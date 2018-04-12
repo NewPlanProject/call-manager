@@ -1,6 +1,6 @@
-device-diagnosis:
+call-manager:
     image: URL
-    hostname: device-diagnosis
+    hostname: call-manager
     volumes:
     - /etc/localtime:/etc/localtime:ro
     ports:
