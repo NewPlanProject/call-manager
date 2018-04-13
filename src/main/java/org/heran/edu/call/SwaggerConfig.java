@@ -20,17 +20,17 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org.citic.iiot.diagnosis.web"))
+                .apis(RequestHandlerSelectors.basePackage("org.heran.edu.call.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("远程监控中使用Swagger2构建RESTful APIs")
+                .title("通信管理中使用Swagger2构建RESTful APIs")
                 .description("如果有疑问可以及时沟通开发人员")
-                .termsOfServiceUrl("guyj3@citic.com")
-                .contact("谷永杰")
+                .termsOfServiceUrl("jianan@git.com.cn")
+                .contact("贾楠")
                 .version("1.0")
                 .build();
     }
